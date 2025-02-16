@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "buildCommand": "npm install && npx nx build client",
+  "outputDirectory": "dist/apps/client",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

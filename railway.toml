@@ -1,0 +1,8 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm install && npx nx build server"
+
+[deploy]
+startCommand = "node dist/apps/server/main.js"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
